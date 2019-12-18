@@ -41,12 +41,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
-        <dependency>
-            <groupId>com.hyfarm</groupId>
-            <artifactId>hyfarm-user-domain</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>com.hyfarm</groupId>
             <artifactId>hyfarm-user-service</artifactId>
