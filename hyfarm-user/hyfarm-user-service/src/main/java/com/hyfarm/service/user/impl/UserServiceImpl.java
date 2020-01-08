@@ -1,5 +1,6 @@
 package com.hyfarm.service.user.impl;
 
+import com.hyfarm.common.IDGenService;
 import com.hyfarm.common.IdGenerate;
 import com.hyfarm.mapper.user.UserMapper;
 import com.hyfarm.service.user.UserService;
@@ -19,7 +20,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public void addUser(UserEntity user) {
         user.setUserId(IdGenerate.uuid());
+        user.setDelFlag("0");
         user.setUserCode(IdGenerate.getCode(user.getUserType()));
-        userMapper.addUser(user);
+       //userMapper.addUser(user);
     }
 }

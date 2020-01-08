@@ -10,6 +10,7 @@ public class UserEntity {
     private String phone;
     private String idCard;
     private String userCode;
+    private String delFlag;
 
     public String getUserId() {
         return userId;
@@ -65,5 +66,13 @@ public class UserEntity {
 
     public void setUserCode(String userCode) {
         this.userCode = userCode;
+    }
+
+    public String getDelFlag() {
+        return delFlag;
+    }
+
+    public void setDelFlag(String delFlag) {
+        this.delFlag = delFlag;
     }
 }
