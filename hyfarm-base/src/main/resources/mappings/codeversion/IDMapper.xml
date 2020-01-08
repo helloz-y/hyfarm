@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hyfarm.mapper.IDMapper">
+
+    <insert id="insertvison">
+        insert into tb_code_vison (busi_vison,vison_time,busi_type) values ("10000",#{time},#{type})
+    </insert>
+
+    <delete id="deleteByType">
+        delete  from tb_code_vison where busi_type=#{type}
+    </delete>
+
+    <select id="getvison" resultType="java.lang.String">
+        select busi_vison from tb_code_vison
+        where 1=1
+        <if test="time!=null and time!=''">
+            and vison_time=#{time}
+        </if>
+        <if test="type!=null and type!=''">
+            and busi_type=#{type}
+        </if>
+    </select>
+</mapper>

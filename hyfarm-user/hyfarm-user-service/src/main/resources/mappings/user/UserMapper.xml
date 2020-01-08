@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hyfarm.mapper.user.UserMapper">
+
+
+    <insert id="addUser">
+        insert  into tb_user(user_id,user_name,user_code,user_type,create_time,update_time,phone,id_card,del_flag)
+        values (#{userId},#{userName},#{userCode},#{userType},now(),now(),#{phone},#{idCard},#{delFlag})
+    </insert>
+</mapper>

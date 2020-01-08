@@ -46,6 +46,11 @@
             <artifactId>hyfarm-user-service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.hyfarm</groupId>
+            <artifactId>hyfarm-base</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
